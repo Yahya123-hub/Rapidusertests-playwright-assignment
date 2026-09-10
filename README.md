@@ -61,3 +61,9 @@ npm run report            # open the last HTML report
 - **Negative/validation cases** (invalid login, invalid registration fields, disabled-submit states): the registration page object already exposes `expectButtonDisabled()` for this, but I'd add dedicated test cases once the exact validation copy/markup is confirmed against the live app rather than guessed.
 - **Cross-browser coverage**: currently Chromium only in `playwright.config.ts`; adding Firefox/WebKit projects is a one-line change once cross-browser support is in scope.
 
+
+<img width="1918" height="1098" alt="run" src="https://github.com/user-attachments/assets/fc6dde22-3d35-44a4-840f-a88c96cb8775" />
+
+
+
+
