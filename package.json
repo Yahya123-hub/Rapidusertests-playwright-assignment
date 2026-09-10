@@ -1,0 +1,21 @@
+{
+  "name": "rapid-usertests-e2e",
+  "version": "1.0.0",
+  "description": "Playwright E2E suite for Registration, Standard Login, and SSO Login flows",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:registration": "playwright test tests/registration.spec.ts",
+    "test:login": "playwright test tests/login.spec.ts",
+    "test:sso": "playwright test tests/sso-login.spec.ts",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen --http-credentials=$BASIC_AUTH_USERNAME:$BASIC_AUTH_PASSWORD $BASE_URL/login"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^20.14.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.0"
+  }
+}
